@@ -106,9 +106,9 @@ $\theta$ in the partially linear model is as follows:
     $k-1$ subsets to predict $\hat{y}_i = p^y_{-j(i)}(x_i)$  
 1. Partial out $ x $ : let $\tilde{y}_i = y_i - \hat{y}_i$
   and $\tilde{d}_i = d_i - \hat{d}_i$.  
-1. Regress $\tilde{y}_i $ on $\tilde{d}_i$, let
+1. Regress $\tilde{y}_i$ on $\tilde{d}_i$, let
   $\hat{\theta}$ be the estimated coefficient for
-  $\tilde{d}_i$ . $ \hat{\theta} $ is consistent,
+  $\tilde{d}_i$ . $ \hat{\theta}$ is consistent,
   asymptotically normal, and has the usual standard error (i.e. the
   standard error given by statsmodels is correct).  
 
