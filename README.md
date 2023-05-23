@@ -1,5 +1,6 @@
 # ML_Gender_Wage_GAP
-ML application in public policy research 
+
+### ML application in public policy research 
 
 Most empirical research focuses on questions of
 causality. However, machine learning methods can actually be used
@@ -17,7 +18,6 @@ umbrella?  We often focus on rain dance–like policy problems. But
 there are also many umbrella-like policy problems.  Not only are
 these prediction problems neglected, machine learning can help
 us solve them more effectively.
-
 
 One of their examples is the allocation of joint replacements for
 osteoarthritis in elderly patients. Joint replacements are costly,
@@ -43,7 +43,7 @@ policy include:
 ### Partially Linear Regression
 
 To be more concrete, consider a regression model.  We have some
-regressor of interest, $ d $, and we want to estimate the effect of $ d $
+regressor of interest, $d$, and we want to estimate the effect of $d$
 on $ y $. We have a rich enough set of controls $ x $ that we are willing to
 believe that $ E[\epsilon|d,x] = 0 $ . $ d_i $ and $ y_i $ are scalars, while
 $ x_i $ is a vector. We are not interested in $ x $ per se, but we need to
