@@ -101,12 +101,12 @@ $\theta$ in the partially linear model is as follows:
   - Partition the data in $k$ subsets.  
   - For the $j$ th subset, train models to predict $y$ and $d$
     using the other $k-1$ subsets. Denote the predictions from
-    these models as $p^y_{-j}(x)$ and  $p^d_{-j}(x)$ .  
+    these models as $p^y_{-j}(x)$ and $p^d_{-j}(x)$ .  
   - For $y_i$ in the $j$ -th subset use the other
     $k-1$ subsets to predict $\hat{y}_i = p^y_{-j(i)}(x_i)$  
-1. Partial out $x$ : let $\tilde{y}_i = y_i - \hat{y}_i$
+2. Partial out $x$ : let $\tilde{y}_i = y_i - \hat{y}_i$
   and $\tilde{d}_i = d_i - \hat{d}_i$.  
-1. Regress $\tilde{y}_i$ on $\tilde{d}_i$, let
+3. Regress $\tilde{y}_i$ on $\tilde{d}_i$, let
   $\hat{\theta}$ be the estimated coefficient for
   $\tilde{d}_i$ . $\hat{\theta}$ is consistent,
   asymptotically normal, and has the usual standard error (i.e. the
