@@ -44,7 +44,7 @@ policy include:
 
 To be more concrete, consider a regression model.  We have some
 regressor of interest, $d$, and we want to estimate the effect of $d$
-on $y$. We have a rich enough set of controls $ x $ that we are willing to
+on $y$. We have a rich enough set of controls $x$ that we are willing to
 believe that $E[\epsilon|d,x] = 0$ . $d_i$ and $y_i$ are scalars, while
 $x_i$ is a vector. We are not interested in $x$ per se, but we need to
 include it to avoid omitted variable bias. Suppose the true model
@@ -55,7 +55,7 @@ y = \theta d + f(x) + \epsilon
 $$
 
 where $f(x)$ is some unknown function. This is called a
-partially linear model: linear in $ d $, but not in
+partially linear model: linear in $d$, but not in
 $x$ .
 
 A typical applied econometric approach for this model would
@@ -81,7 +81,7 @@ include:
 
 
 In some sense, machine learning can be thought of as a way to
-choose $ T $ in an automated and data-driven way. Choosing which machine learning method
+choose $T$ in an automated and data-driven way. Choosing which machine learning method
 to use and tuning parameters specifically for that method are still potentially arbitrary
 decisions, but these decisions may have less impact.
 
@@ -101,7 +101,7 @@ $\theta$ in the partially linear model is as follows:
   - Partition the data in $k$ subsets.  
   - For the $j$ th subset, train models to predict $y$ and $d$
     using the other $k-1$ subsets. Denote the predictions from
-    these models as $p^y_{-j}(x)$ and  $p^d_{-j}(x)$.  
+    these models as $p^y_{-j}(x)$ and  $p^d_{-j}(x)$ .  
   - For $y_i$ in the $j$ -th subset use the other
     $k-1$ subsets to predict $\hat{y}_i = p^y_{-j(i)}(x_i)$  
 1. Partial out $x$ : let $\tilde{y}_i = y_i - \hat{y}_i$
